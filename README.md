@@ -20,7 +20,6 @@ The application uses **Tkinter** with the **Flatly** theme via **ttkbootstrap**,
 
 ### CSV Data Loading
 - The CSV must contain a **date** column (or datetime index) and a **COTE** column (water level in mNGF).  
-- The column `"Cote du plan d'eau (mNGF)"` is automatically renamed to `COTE`.
 
 ### Interactive Visualization
 - Matplotlib charts embedded in the Tkinter interface.
@@ -29,7 +28,7 @@ The application uses **Tkinter** with the **Flatly** theme via **ttkbootstrap**,
 
 ### Level Forecasting
 - Based on historical data and monthly assumptions:
-  - Outflow (m³/s)
+  - Water discharge (m³/s)
   - Evaporation (mm/day)
 - Charts display colored areas corresponding to critical thresholds.
 
@@ -44,7 +43,7 @@ The application uses **Tkinter** with the **Flatly** theme via **ttkbootstrap**,
 
 ## Installation
 
-### Prerequisites
+### Requirements
 - Python 3.10+
 - Python modules:
 ```bash
@@ -59,5 +58,6 @@ pyinstaller --onefile --noconsole app_olivettes.py \
 --add-data "<path_to_python>/Lib/site-packages/matplotlib/mpl-data;matplotlib/mpl-data" \
 --hidden-import=matplotlib.backends.backend_pdf
 ```
+Last line is required to download the plots as pdf.
 
 
