@@ -45,9 +45,9 @@ The application uses **Tkinter** with the **Flatly** theme via **ttkbootstrap**,
 
 ### Requirements
 - Python 3.10+
-- Python modules:
+- Install dependencies with:
 ```bash
-pip install pandas matplotlib scipy ttkbootstrap mplcursors
+pip install -r requirements.txt
 ```
 Required HSV file: HSV_32.txt (contains the relations COTE ↔ VOLUME ↔ SURFACE)
 
